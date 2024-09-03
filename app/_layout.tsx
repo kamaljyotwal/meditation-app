@@ -3,9 +3,8 @@ import { useFonts } from 'expo-font';
 import { View, Text } from "react-native";
 import TimerProvider from "../context/TimerContext";
 
-
 export default function RootLayout() {
-
+  // @fonts
   const [fontsLoaded, error] = useFonts({
     "Roboto-Mono": require("../assets/fonts/RobotoMono-Regular.ttf"),
   });

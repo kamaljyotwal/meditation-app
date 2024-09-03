@@ -14,14 +14,14 @@ const NatureMeditate = () => {
       <View className="flex-1">
         <AppGradient colors={["#161b2e", "#0a4d4a", "#766e67"]}>
           <Text className='text-gray-200 font-bold text-left text-4xl mb-3'>
-            Welcome k
+            Welcome kamal
           </Text>
           <Text className='text-indigo-100 font-medium text-xl'>
             Start your practice today
           </Text>
 
           <FlatList
-            className='mb-20'
+            // className='mb-20'
             keyExtractor={item => item.id.toString()}
             data={MEDITATION_DATA}
             showsVerticalScrollIndicator={false}

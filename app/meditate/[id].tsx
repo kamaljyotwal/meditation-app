@@ -26,7 +26,6 @@ const Meditate = () => {
   const [audioSound, setAudioSound] = useState<Audio.Sound | null>(null)
   const [isPlayingAudio, setIsPlayingAudio] = useState(false)
 
-
   //Effects
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -90,7 +89,6 @@ const Meditate = () => {
     if (isMeditating) toggleMeditationSessionStatus();
     router.push('(modal)/adjust-meditation-duration')
   }
-
 
   return (
     <View className='flex-1'>

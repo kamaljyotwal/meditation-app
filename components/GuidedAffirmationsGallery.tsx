@@ -9,7 +9,6 @@ interface GuidedAffirmationsGalleryProps {
 }
 
 const GuidedAffirmationsGallery = ({ title, previews }: GuidedAffirmationsGalleryProps) => {
-  
   return (
     <View className='my-5'>
       <View className='mb-2'>
