@@ -5,11 +5,22 @@ import AFFIRMATION_GALLERY from '@/constants/affirmations-gallery';
 import { GalleryPreviewData } from '@/constants/models/AffirmationCategory';
 import AppGradient from '@/components/AppGradient';
 import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const AffirmationPractice = () => {
     const { itemId } = useLocalSearchParams();
+    const navigation = useNavigation();
+
+    // States
     const [affirmation, setAffirmation] = useState<GalleryPreviewData | null>(null);
     const [sentences, setSentences] = useState<string[]>([]);
+
+    // Lifecycle Effects
+    useEffect(() => {
+        navigation.setOptions({
+            headerShown: false
+        });
+    }, [navigation]);
 
     useEffect(() => {
         if (itemId) {
@@ -44,7 +55,7 @@ const AffirmationPractice = () => {
 
                     <ScrollView
                         showsVerticalScrollIndicator={false}
-                        className='mt-4'
+                        className='mt-10'
                     >
                         <View className='h-full justify-center'>
                             <View className='h-4/5 justify-center'>

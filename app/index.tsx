@@ -5,10 +5,10 @@ import CustomButton from '@/components/CustomButton'
 import { useRouter } from "expo-router";
 import AppGradient from "@/components/AppGradient";
 
-
 export default function HomeScreen() {
-
+  // vars
   const router = useRouter()
+
   return (
     <>
       <View className="flex-1">
@@ -21,11 +21,14 @@ export default function HomeScreen() {
 
             <SafeAreaView className="flex-1 px-1 justify-between">
               <View>
-                <Text className="text-center text-white font-bold text-4xl">
+                <Text className="mt-20 text-center text-white font-bold text-4xl">
                   Simple Meditation
                 </Text>
-                <Text className="mt-3 text-center text-white text-regular text-2xl">
-                  Simplify your journey.
+                <Text className="mt-10 text-center text-white text-regular text-xl">
+                  Declutter your mind,
+                </Text>
+                <Text className="mt-1 text-center text-white text-regular text-xl">
+                  Simplify your life.
                 </Text>
               </View>
 
